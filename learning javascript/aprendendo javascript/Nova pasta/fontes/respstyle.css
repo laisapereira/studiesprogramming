@@ -1,0 +1,26 @@
+body {
+    background-color: grey;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main {
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 320px;
+    max-width: 800px;
+    width:800px;
+}
+
+
+@media screen and (max-width:1000px) { /* breakpoint */
+    main {
+        background-color: green;
+        width: 60rem;
+        flex-direction:row;
+
+}

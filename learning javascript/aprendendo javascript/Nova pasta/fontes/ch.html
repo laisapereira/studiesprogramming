@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medidas Ch e Ex</title>
+</head>
+<body>
+    <!--EX e CH--
+        - utilizam o font-family como base para determinar a medida da fonte
+        - ex: relativo a altura x da fonte utilizada
+        *altura x corresponde a altura minúsucla x dessa fonte.
+        - ch = baseado na largura do elemento "O";
+
+    --->
+
+    <h1>Ch e EX</h1>
+    <!--Character unit-->
+
+    <section class = "ch">
+        Estamos testando a unidade de medida ch em fontes.
+    </section>
+
+    <section class="ex">
+        Testando EX and O
+    </section>
+
+    <style>
+        .ex {
+            background: blue;
+            font-size: 15px;
+            height: 10ch; /* O element - 1ch */
+            font-family: sans-serif;
+        }
+
+        .ch {
+            font-size: 10ch; /*Other aplications */
+        }
+    </style>
+</body>
+</html>

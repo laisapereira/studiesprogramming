@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* Preciso que meu navbar tenha o conteúdo centralizado, 
+mas meu footer alinhado á esquerda. 
+Ao invés de ter que escrever um novo mixin, 
+podemos passar a --propriedade-- desejada por parâmetro*/
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2600ff;
+}
+
+#navbar button {
+  background-color: #b61515;
+  padding: 10px;
+}
+
+#navbar button:hover {
+  background-color: #2600ff;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #b61515;
+}
+/*# sourceMappingURL=style.css.map */

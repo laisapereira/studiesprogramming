@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando unidades</title>
+</head>
+<body>
+    <h1> Rem & Em </h1>
+
+   <div id = "pai-em">
+       <div class ="em">
+        <h2>Testando</h2>
+            <div class ="em">
+                <h2>Testando</h2>
+                <div class ="em">
+                    <h2>Testando</h2>
+                </div>
+            </div>
+       </div>
+   </div>
+
+   <br />
+
+   <!-- REM-->
+   <!--fontes e media-queries-->
+
+   <div id = "pai-rem">
+        <div class ="rem">
+            <h2>Testando</h2>
+            <div class ="rem">
+                <h2>Testando</h2>
+            </div>
+                <div class ="rem">
+                    <h2>Testando</h2>
+                </div>
+        </div>
+    </div>
+   
+
+   <style>
+
+       :root {
+           font-size: 16px; /*Tamanho da fonte fixada do elemento raiz*/
+       }
+
+       #pai-em {
+           font-size:10px;
+       }
+
+       .em {
+           background-color: yellow;
+           width: 1em; /* Section "em" fica com 10px devido ao elemento pai */
+           /*height: 1em */
+           font-size:2em;
+           
+       }
+
+       .rem {
+           background-color:lawngreen;
+           width: 13rem;
+           font-size: 48px;
+           font-size:2rem;  /*root font-size/element font-size = rem value */
+       }
+   </style>
+        
+    
+</body>
+</html>

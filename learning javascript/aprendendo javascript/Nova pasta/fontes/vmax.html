@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIDAS RELATIVAS E ABSOLUTAS</title>
+</head>
+<body>
+    <!-- VMIN E VMAX
+        Relacionadas a largura e altura da viewport (máximo e mínimo)
+        - vmax = 1/100 do valor máximo entre altura e a largura máxima da janela
+        - vmin = 1/100 do valor mínimo entre a altura e a largura mínima da janela
+        - Se: 
+            largura = 800px;
+            altura = 1080px;
+            vmax= 10.8px;
+            vmin = 8px;
+    -->
+
+    <h1>Vmax e Vmin</h1>
+    <section class ="view"></section>
+    
+    <style>
+        .view {
+            background:blue;
+            height: 350px; /*50 vh*/
+            width: 50vmax;
+        }
+
+        h1 {
+            font-size: 15vmin;
+        }
+    </style>
+</body>
+</html>

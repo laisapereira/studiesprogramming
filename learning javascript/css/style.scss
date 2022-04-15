@@ -1,0 +1,54 @@
+$corPrimaria: #2600ff;
+$corSecundaria: #b61515;
+ // @import './navbar';
+
+/* Preciso que meu navbar tenha o conteúdo centralizado, 
+mas meu footer alinhado á esquerda. 
+Ao invés de ter que escrever um novo mixin, 
+podemos passar a --propriedade-- desejada por parâmetro*/
+ @mixin flexCenter($align, $background) { //
+     display:flex;
+     justify-content:$align;
+     align-items:center;
+     background: $background;
+ }
+
+
+ #navbar {
+
+    @include flexCenter(center);
+    background-color:$corPrimaria;
+    
+
+    button {
+        background-color: $corSecundaria;
+        padding: 10px;
+        &:hover {
+            background-color: $corPrimaria;
+        }
+    }
+
+
+}
+
+
+footer {
+    @include flexCenter(space-between);
+    background: $corSecundaria
+}
+
+// se eu quiser add o mesmo estilo
+// pra 2 classes
+
+/* 
+    @import './navbar';
+
+
+    .footer {
+        @extend navbar;
+        background: red;
+
+    }
+
+
+*/
